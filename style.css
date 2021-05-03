@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+:root {
+  --colorFont: #b6d0f2;
+}
+/* body {
+  background: linear-gradient(90deg, #496d8c, #84a4bf);
+  transition-property: background;
+  transition-timing-function: linear;
+  transition-duration: 3.5s;
+} */
+header {
+  padding: 32px;
+  background: #011126;
+}
+
+header nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+nav a {
+  font-size: 36px;
+  text-decoration: none;
+  color: var(--colorFont);
+  position: relative;
+}
+nav a::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--colorFont);
+  transition: width 300ms;
+}
+nav a:hover::after {
+  width: 100%;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px auto 40px auto;
+}
+section div:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 15px 15px 20px 15px;
+  margin: auto;
+  background: #2a4359;
+  border-radius: 4px;
+}
+section div:nth-child(2).ativo {
+  margin: 20px auto 20px auto;
+  padding: 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background: #b6d0f2;
+  border: 4px solid #496d8c;
+  width: 450px;
+  border-radius: 4px;
+}
+form {
+  width: 420px;
+  padding: 10px;
+  margin: auto;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  color: var(--colorFont);
+}
+input[type='number'],
+input[type='text'],
+textarea {
+  width: 400px;
+  outline: 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 2px 2px 4px #b6d0f2;
+}
+input[type='color'] {
+  height: 40px;
+  width: 60px;
+}
+button {
+  margin: 15px 0;
+  padding: 10px 40px;
+  border-radius: 4px;
+  border: 2px solid var(--colorFont);
+  cursor: pointer;
+  background: #011126;
+  transition: 0.3s;
+  color: var(--colorFont);
+  font-size: 1rem;
+}
+button:hover {
+  background: #496d8c;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Faculdade iv2 - Projeto módulo 5</title>
+</head>
+
+<body style="transition: background 3.5s;">
+  <header>
+    <nav>
+      <a href="">Início</a>
+    </nav>
+  </header>
+  <section>
+    <div>
+      <form action="">
+        <label>Cor 1</label>
+        <input type="color" id="cor1" required>
+        <label>Cor 2</label>
+        <input type="color" id="cor2" required>
+        <label>Quantidade em graus</label>
+        <input type="number" min="0" max="360" id="graus" required placeholder="Entre 0 e 360">
+        <label>Cor da fonte</label>
+        <input type="color" id="corFonte" required>
+        <label>Tamanho da fonte</label>
+        <input type="number" id="tamanhoFonte" required>
+        <label>Mensagem</label>
+        <textarea id="msg" required></textarea>
+        <button>Enviar</button>
+        <button id="limparStorage">Limpar formatação</button>
+      </form>
+
+    </div>
+    <div>
+      <p></p>
+    </div>
+
+  </section>
+  <div class="teste"></div>
+  <script src="app.js"></script>
+</body>
+
+</html>
